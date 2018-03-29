@@ -1,0 +1,14 @@
+<p>
+Here is a dynamically fetched list of Article attributes:
+</p>
+<h1 data-bind="text: articleInfo.title"></h1><!-- Name -->
+<h2 data-bind="text: articleInfo.headline"></h1><!-- Headline -->
+<h3 data-bind="text: articleInfo.abstract"></h3><!-- Abstract -->
+<div data-bind="html: articleInfo.body"></div><!-- Body -->
+<div class="oj-flex">
+  <div class="oj-flex-item"><img data-bind="attr:{src: articleInfo.smallThumbnail}"></img></div>
+  <div class="oj-flex-item oj-sm-only-hide"><img data-bind="attr:{src: articleInfo.largeThumbnail}"></img></div>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-only-hide oj-md-only-hide"><img data-bind="attr:{src: articleInfo.originalImage}" style="width: 100%"></img></div>
+</div>
